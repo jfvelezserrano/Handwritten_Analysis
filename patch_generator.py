@@ -1,5 +1,12 @@
 import numpy as np
 
+def genera_palabras_al_azar():
+    list_random_strings = []
+
+    for i in range(batch_size):
+        list_random_strings.append(''.join(random.choice(string.ascii_lowercase) for _ in range(random.randint(1,MAX_LENGTH))))
+    return list_random_strings
+
 def crear_imagen(word, width, height):
     image = 255 * np.ones(shape = (height, width), dtype = np.uint8)
     image = cv2.putText(image, text = word, org = (5, 30),
