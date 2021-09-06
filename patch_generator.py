@@ -1,7 +1,7 @@
 import numpy as np
 import random
 import string
-import cv2
+import cv3
 
 def genera_palabras_al_azar(batch_size,max_length):
     list_random_strings = []
