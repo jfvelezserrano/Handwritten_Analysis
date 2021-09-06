@@ -1,7 +1,11 @@
 import numpy as np
 import random
 import string
+<<<<<<< HEAD
 import cv4
+=======
+import cv3
+>>>>>>> 4a0fa0d3cff56363b425cd2ac9520be6ddd6094f
 
 def genera_palabras_al_azar(batch_size,max_length):
     list_random_strings = []
